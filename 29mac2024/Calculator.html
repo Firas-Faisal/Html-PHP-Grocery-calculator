@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+   <form action="calc.php" method="post">
+        <fieldset>
+            <legend><font color="tomato">Calculator</font></legend>
+            <p>Use this form to calculate the order total.</p>
+            <label for="quantity">Quantity</label><br>
+            <input type="number" name="quantity" id="quantity" value="1" min="1"><br>
+            <label for="price">Price Per Unit</label><br>
+            <input type="text" name="price" id="price" value="1.00"><br>
+            <label for="tax">Tax Rate (%)</label><br>
+            <input type="text" name="tax" id="tax" value="0.00" max="100"><br>
+            <label for="discount">Discount (%)</label><br>
+            <input type="text" name="discount" id="discount" value="0.00" max="100"><br>
+            <label for="total">Total</label><br>
+            <input type="text" name="total" id="total" value="0.00" readonly="readonly"><br><br>
+            <input type="submit" value="Calculate">
+        </fieldset>
+
+
+
+   </form>
+</body>
+</html>
